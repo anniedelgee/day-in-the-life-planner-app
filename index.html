@@ -18,20 +18,90 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <link rel="stylesheet" href="./starter/style.css" />
+    <title>Day in the life of MOI</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h1 class="display-3">DAY IN THE LIFE OF MOI</h1>
+      <p class="lead">A simple calendar app for scheduling the next best day of your little life</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+     
+    <form> 
       <!-- Timeblocks go here -->
+      <!-- <div class="container" id="timeblocks">-->
+        <!--9am -->
+        <div class="input-group mb-3" id="hour1" data-hour="9">
+          <p class="hour">9am- hit the ground running!</p>
+          <input type="text" class="form-control" id="active9">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn9am">Save</button>
+        </div>
+        <hr>
+        <!--10am --> 
+        <div class="input-group mb-3" id="hour2" data-hour="10">
+          <p class="hour">10am- keep it going!</p>
+          <input type="text" class="form-control" id="active10">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn10am">Save</button>
+        </div>
+        <hr>
+        <!--11am --> 
+        <div class="input-group mb-3" id="hour3" data-hour="11">
+          <p class="hour">11am- don't let up!</p>
+          <input type="text" class="form-control" id="active11">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn11am">Save</button>
+        </div>
+        <hr>
+        <!--12am -->
+        <div class="input-group mb-3" id="hour4" data-hour="12">
+          <p class="hour">12pm- no steam lost!</p>
+          <input type="text" class="form-control" id="active12">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn12pm">Save</button>
+        </div>
+        <hr>
+        <!--1pm --> 
+        <div class="input-group mb-3" id="hour5" data-hour="13">
+          <p class="hour">1pm- refuel!</p>
+          <input type="text" class="form-control" id="active13">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn1pm">Save</button>
+        </div>
+        <hr>
+        <!--2pm --> 
+        <div class="input-group mb-3" id="hour6" data-hour="14">
+          <p class="hour">2pm- persistence for perfection!</p>
+          <input type="text" class="form-control" id="active14">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn2pm">Save</button>
+        </div>
+        <hr>
+        <!--3pm -->
+        <div class="input-group mb-3" id="hour7" data-hour="15">
+          <p class="hour">3pm- wrapping up soon!</p>
+          <input type="text" class="form-control" id="active15">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn3pm">Save</button>
+        </div>
+        <hr>
+        <!--4pm -->
+        <div class="input-group mb-3" id="hour8" data-hour="16">
+          <p class="hour">4pm- winding down!</p>
+          <input type="text" class="form-control" id="active16">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn4pm">Save</button>
+        </div>
+        <hr>
+        <!--5pm -->
+        <div class="input-group mb-3" id="hour9" data-hour="17">
+          <p class="hour">5pm- you deserve a treat!</p>
+          <input type="text" class="form-control" id="active17">
+          <button class="btn btn-outline-secondary" type="button" id="saveBtn5pm">Save</button>
+        </div>
+        <hr>
+      </div>
+    </form>
     </div>
-
+    <script src="./starter/index.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
