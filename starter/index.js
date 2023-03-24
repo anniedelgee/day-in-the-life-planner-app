@@ -16,10 +16,10 @@ const businessHours = ['09', '10', '11', '12', '13', '14', '15', '16', '17'];
 const currentDate = moment();
 const currentHour = currentDate.format('HH');
 
-// Display the current date and time at the top of the calendar
+// current date and time display
 $('#currentDay').text(currentDate.format('dddd, MMMM Do'));
 
-// Create timeblocks for standard business hours
+// timeblocks for business hours
 for (let i = 0; i < businessHours.length; i++) {
   const hour = businessHours[i];
 
@@ -43,11 +43,11 @@ for (let i = 0; i < businessHours.length; i++) {
 
   // Color-code the timeblock based on past, present, or future
   if (hour < currentHour) {
-    timeblock.addClass('past');
+    timeblock.addClass('#past');
   } else if (hour === currentHour) {
-    timeblock.addClass('present');
+    timeblock.addClass('#present');
   } else {
-    timeblock.addClass('future');
+    timeblock.addClass('#future');
   }
 }
 
